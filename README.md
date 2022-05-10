@@ -40,7 +40,7 @@ Implement an Extended Kalman Filter to track the three dimensional position and 
 3. Visual-Inertial SLAM: combine the IMU prediction step from part (1), with the landmark update step from part (2) and implement an IMU update step based on the stereo-camera observation model to obtain a complete visual-inertial SLAM algorithm.
 
 ## Generated Maps
-<img width="348" alt="Screen Shot 2022-05-09 at 21 11 55" src="https://user-images.githubusercontent.com/92130976/167523696-5ba4f969-6d96-445a-bd0d-0b1e8bebdb7c.png">
+<img width="555" alt="Screen Shot 2022-05-09 at 21 22 04" src="https://user-images.githubusercontent.com/92130976/167523826-8f6e4c32-06d8-4cc4-a8d6-52aaee8447ab.png">
 
 Figure 1: IMU Localization from EKF Prediction
 
