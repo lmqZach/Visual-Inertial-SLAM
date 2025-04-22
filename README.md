@@ -1,7 +1,7 @@
 
 # Visual-Inertial SLAM
 
-**Author:** Zach Muchen-Li  
+**Author:** Zach(Muqing) Li  
 
 ---
 
@@ -12,9 +12,9 @@ This project implements a Visual-Inertial SLAM system using stereo camera, gyros
 Technically, the goal is to implement an EKF prediction step based on SE(3) kinematics with IMU measurements and an EKF update step based on the stereo-camera observation model with feature observations to perform localization and mapping.
 
 Methodology breakdown:
-1. IMU Localization via EKF Prediction: Implement the EKF prediction step based on the SE(3) kinematics and the linear and angular velocity measuremetns to estimate the pose Tt ∈ SE(3) of the IMU over time t.
-2. Landmark Mapping via EKF Update: implement EKF with the unknown landmark positions m ∈ R^(3×M) as a state and perform EKF update after every visual observation zt to keep track of mean and covariance of m. 
-3. Visual-Inertial SLAM: combine IMU prediction step from (1), with the landmark update step from (2), and implement IMU update step based on the stereo-camera observation model to complete visual-inertial SLAM algorithm.
+1. IMU Localization via EKF Prediction: Implement EKF prediction based on SE(3) kinematics with linear and angular velocity measurements to estimate IMU's poses Tt ∈ SE(3) over time t.
+2. Landmark Mapping via EKF Update: Implement EKF with the unknown landmark positions m ∈ R^(3×M) as a state and perform EKF update after every visual observation zt to keep track of mean and covariance of m. 
+3. Visual-Inertial SLAM: Combine IMU prediction step from (1), with the landmark update step from (2), and implement IMU update step based on the stereo-camera observation model to complete visual-inertial SLAM algorithm.
 
 ---
 
