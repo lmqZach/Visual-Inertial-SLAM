@@ -88,19 +88,23 @@ It is important for autonomous vehicles or robots to understand their pose and t
 
 ### 2D-Mapping 
 Figure 1: IMU Localization from EKF Prediction
+
 <img width="555" alt="Screen Shot 2022-05-09 at 21 22 04" src="https://user-images.githubusercontent.com/92130976/167523826-8f6e4c32-06d8-4cc4-a8d6-52aaee8447ab.png">
 
 Figure 2: Estimated Trajectory with EKF Landmark Mapping
+
 <img width="555" alt="Screen Shot 2022-05-09 at 21 21 22" src="https://user-images.githubusercontent.com/92130976/167523759-6bbb5f5d-b6bf-4bb1-a786-879b7f376f96.png">
 
 
 ### 3D Real-time Tracking and Mapping 
 Figure 3: Status Bar and Timestamp Adjustment
+
 <img src="https://github.com/user-attachments/assets/4eb0dc6f-df3f-4b36-80ea-567b51cb2f5e" width="555"/>
 
-Figure 4: SLAM Pose and Estimation
-<img src="https://github.com/user-attachments/assets/60530f2c-9b8d-4ec4-bf03-f1702501e06a" width="555"/>
 
+Figure 4: SLAM Pose and Estimation
+
+<img src="https://github.com/user-attachments/assets/60530f2c-9b8d-4ec4-bf03-f1702501e06a" width="555"/>
 
 
 ## Key Contributions and Significance
