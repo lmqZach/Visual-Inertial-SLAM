@@ -11,10 +11,10 @@ This project implements a Visual-Inertial SLAM system using stereo camera, gyros
 ### Methodology
 Technically, the goal is to implement an EKF prediction step based on SE(3) kinematics with IMU measurements and an EKF update step based on the stereo-camera observation model with feature observations to perform localization and mapping.
 
-### Detailed Tasks
+Methodology breakdown:
 1. IMU Localization via EKF Prediction: Implement the EKF prediction step based on the SE(3) kinematics and the linear and angular velocity measuremetns to estimate the pose Tt ∈ SE(3) of the IMU over time t.
-2. Landmark Mapping via EKF Update: implement an EKF with the unknown landmark positions m ∈ R^(3×M) as a state and perform EKF update steps after every visual observation zt in order to keep track of the mean and covariance of m. 
-3. Visual-Inertial SLAM: combine the IMU prediction step from part (1), with the landmark update step from part (2) and implement an IMU update step based on the stereo-camera observation model to obtain a complete visual-inertial SLAM algorithm.
+2. Landmark Mapping via EKF Update: implement EKF with the unknown landmark positions m ∈ R^(3×M) as a state and perform EKF update after every visual observation zt to keep track of mean and covariance of m. 
+3. Visual-Inertial SLAM: combine IMU prediction step from (1), with the landmark update step from (2), and implement IMU update step based on the stereo-camera observation model to complete visual-inertial SLAM algorithm.
 
 ---
 
@@ -87,17 +87,19 @@ It is important for autonomous vehicles or robots to understand their pose and t
 ## Result and Output
 
 ### 2D-Mapping 
-<img width="555" alt="Screen Shot 2022-05-09 at 21 22 04" src="https://user-images.githubusercontent.com/92130976/167523826-8f6e4c32-06d8-4cc4-a8d6-52aaee8447ab.png">
 Figure 1: IMU Localization from EKF Prediction
+<img width="555" alt="Screen Shot 2022-05-09 at 21 22 04" src="https://user-images.githubusercontent.com/92130976/167523826-8f6e4c32-06d8-4cc4-a8d6-52aaee8447ab.png">
 
-<img width="558" alt="Screen Shot 2022-05-09 at 21 21 22" src="https://user-images.githubusercontent.com/92130976/167523759-6bbb5f5d-b6bf-4bb1-a786-879b7f376f96.png">
 Figure 2: Estimated Trajectory with EKF Landmark Mapping
+<img width="558" alt="Screen Shot 2022-05-09 at 21 21 22" src="https://user-images.githubusercontent.com/92130976/167523759-6bbb5f5d-b6bf-4bb1-a786-879b7f376f96.png">
 
-### 3D Real-time Trackign and Mapping 
 
+### 3D Real-time Tracking and Mapping 
 Figure 3: Status Bar and Timestamp Adjustment
+![status bar](https://github.com/user-attachments/assets/4eb0dc6f-df3f-4b36-80ea-567b51cb2f5e)
 
 Figure 4: SLAM Pose and Estimation
+![plot](https://github.com/user-attachments/assets/60530f2c-9b8d-4ec4-bf03-f1702501e06a)
 
 
 ## Key Contributions
